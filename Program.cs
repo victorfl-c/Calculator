@@ -6,7 +6,7 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-             Menu();
+            Menu();
         }
         static void Menu()
         {
@@ -64,7 +64,7 @@ namespace Calculator
         }
         static void Divisao()
         {
-             Console.Clear();
+            Console.Clear();
             Console.WriteLine("Primeiro valor: ");
             float valor1 = float.Parse(Console.ReadLine());
 
@@ -88,7 +88,7 @@ namespace Calculator
             float resultado = valor1 * valor2;
             Console.WriteLine("");
             Console.WriteLine($"O resultado da multiplicação é: {resultado}\n");
-             VoltarMenu();
+            VoltarMenu();
         }
         static void Sair()
         {
@@ -99,11 +99,11 @@ namespace Calculator
         {
             Console.WriteLine("Opção inválida");
             Console.WriteLine("Escolha entre 1 e 4!");
-              VoltarMenu();
+            VoltarMenu();
         }
         static void VoltarMenu()
         {
-           Console.WriteLine("Pressione a tecla Enter para voltar ao Menu");
+            Console.WriteLine("Pressione a tecla Enter para voltar ao Menu");
             Console.ReadKey();
             Menu(); 
         }
