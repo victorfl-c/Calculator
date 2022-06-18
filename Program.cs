@@ -46,8 +46,7 @@ namespace Calculator
             float resultado = (valor1 + valor2);
             Console.WriteLine("");
             Console.WriteLine($"O resultado da adição é: {resultado}\n");
-            Console.WriteLine("Pressione Enter para voltar ao menu.");
-            Console.ReadKey();
+            VoltarMenu();
         }
         static void Subtracao()
         {
@@ -61,8 +60,7 @@ namespace Calculator
             float resultado = (valor1 - valor2);
             Console.WriteLine("");
             Console.WriteLine($"O resultado da subtração é: {resultado}\n");
-            Console.WriteLine("Pressione Enter para voltar ao menu.");
-            Console.ReadKey();
+            VoltarMenu();
         }
         static void Divisao()
         {
@@ -76,8 +74,7 @@ namespace Calculator
             float resultado = (valor1 / valor2);
             Console.WriteLine("");
             Console.WriteLine($"O resultado da divisão é: {resultado}\n");
-            Console.WriteLine("Pressione Enter para voltar ao menu.");
-            Console.ReadKey();
+            VoltarMenu();
 
         }
         static void Multiplicacao()
@@ -91,8 +88,7 @@ namespace Calculator
             float resultado = valor1 * valor2;
             Console.WriteLine("");
             Console.WriteLine($"O resultado da multiplicação é: {resultado}\n");
-            Console.WriteLine("Pressione Enter para voltar ao menu.");
-            Console.ReadKey();
+             VoltarMenu();
         }
         static void Sair()
         {
@@ -103,9 +99,13 @@ namespace Calculator
         {
             Console.WriteLine("Opção inválida");
             Console.WriteLine("Escolha entre 1 e 4!");
-            Console.WriteLine("Pressione a tecla Enter para voltar ao Menu");
+              VoltarMenu();
+        }
+        static void VoltarMenu()
+        {
+           Console.WriteLine("Pressione a tecla Enter para voltar ao Menu");
             Console.ReadKey();
-            Menu();
+            Menu(); 
         }
     }
 }
